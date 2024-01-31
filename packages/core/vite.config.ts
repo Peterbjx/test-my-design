@@ -36,7 +36,12 @@ export default defineConfig({
         {
           dir: resolve(__dirname, 'dist/es'),
           format: 'es',
-          sourcemap: true
+          sourcemap: true,
+          preserveModulesRoot: 'src',
+          preserveModules: true,
+          chunkFileNames: '[name].js',
+          entryFileNames: '[name].js',
+          assetFileNames: '[name].[ext]'
         },
         {
           dir: resolve(__dirname, 'dist/cjs'),
@@ -52,21 +57,17 @@ export default defineConfig({
     tsconfigPaths(),
     dts({
       entryRoot: './src/components',
-      outDir: ['./dist/es', './dist/cjs', './dist/umd']
+      outDir: ['./dist/types']
     }),
     rollupResolve(),
     svgr({
       svgrOptions: {
-        // if want to use svgoConfig, you need these two plugins first
-        // but there is no mention of needing to add a plugin in document
-        // https://github.com/pd4d10/vite-plugin-svgr/issues/99
         plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx'],
         svgoConfig: {
           plugins: [
             {
               name: 'customPluginName',
               fn: (_, __, info) => {
-                // add special id
                 const pathArr = info.path?.split('/') || []
                 const name = `${
                   (/^\S+(?=\.svg)/g.exec(pathArr[pathArr.length - 1]) || [])[0]

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import React, { SetStateAction, useState } from 'react'
+import { SetStateAction, useState } from 'react'
 import { useResponsive } from 'antd-style'
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
 import useStyles from './styles'
