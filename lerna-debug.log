@@ -1,8 +1,8 @@
-36 error Error: Command failed with exit code 128: git tag v0.1.37-alpha.0 -m v0.1.37-alpha.0
-36 error 致命错误：标签 'v0.1.37-alpha.0' 已存在
-36 error     at makeError (/Users/liuxiyang/work/code/aelfd/node_modules/execa/lib/error.js:60:11)
-36 error     at handlePromise (/Users/liuxiyang/work/code/aelfd/node_modules/execa/index.js:118:26)
+36 error Error: Command failed with exit code 128: git tag v0.1.13-alpha.0 -m v0.1.13-alpha.0
+36 error 致命错误：标签 'v0.1.13-alpha.0' 已存在
+36 error     at makeError (/Users/baijianxiong/aelfd/aelfd/node_modules/execa/lib/error.js:60:11)
+36 error     at handlePromise (/Users/baijianxiong/aelfd/aelfd/node_modules/execa/index.js:118:26)
 36 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-36 error     at async VersionCommand.gitCommitAndTagVersion (/Users/liuxiyang/work/code/aelfd/node_modules/lerna/dist/index.js:8365:9)
-36 error     at async VersionCommand.commitAndTagUpdates (/Users/liuxiyang/work/code/aelfd/node_modules/lerna/dist/index.js:8330:18)
+36 error     at async VersionCommand.gitCommitAndTagVersion (/Users/baijianxiong/aelfd/aelfd/node_modules/lerna/dist/index.js:8365:9)
+36 error     at async VersionCommand.commitAndTagUpdates (/Users/baijianxiong/aelfd/aelfd/node_modules/lerna/dist/index.js:8330:18)
 36 error     at async Promise.all (index 0)

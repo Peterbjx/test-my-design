@@ -1,7 +1,6 @@
 {
   "name": "test-my-design",
   "version": "0.1.13-alpha.0",
-  "private": false,
   "types": "./dist/types/index.d.ts",
   "main": "./dist/cjs/test-my-design.js",
   "module": "./dist/es/components/index.js",
