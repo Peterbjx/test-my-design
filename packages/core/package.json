@@ -1,6 +1,6 @@
 {
   "name": "test-my-design",
-  "version": "0.1.82-alpha.0",
+  "version": "0.1.83-alpha.0",
   "types": "./dist/types/index.d.ts",
   "main": "./dist/cjs/test-my-design.js",
   "module": "./dist/es/components/index.js",
