@@ -1,4 +1,3 @@
-export * from 'antd'
 export { default as AELFDProvider } from './provider'
 export type { IAelfdThemeProviderProps } from './provider'
 export { default as Button } from './Button'
