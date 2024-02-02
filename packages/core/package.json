@@ -1,6 +1,6 @@
 {
   "name": "test-my-design",
-  "version": "0.1.87-alpha.0",
+  "version": "0.1.88-alpha.0",
   "types": "./dist/types/index.d.ts",
   "main": "./dist/cjs/test-my-design.js",
   "module": "./dist/es/components/index.js",
@@ -37,9 +37,9 @@
     "@svgr/babel-plugin-transform-svg-component": "^8.0.0",
     "@svgr/plugin-jsx": "^8.1.0",
     "@svgr/plugin-svgo": "^8.1.0",
+    "antd": "^5.13.1",
     "copy-to-clipboard": "^3.3.3",
-    "swiper": "^11.0.5",
-    "antd": "^5.13.1"
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@aws-sdk/client-cognito-identity": "^3.410.0",
