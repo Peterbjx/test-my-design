@@ -3,7 +3,7 @@
     "declaration": true,
     "declarationDir": "./dist/types",
     "sourceMap": true,
-    "emitDeclarationOnly": true, // 只生成类型声明文件
+    "emitDeclarationOnly": true,
     "noEmit": false,
     "target": "ES2015",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -16,7 +16,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx", // 对于Vite + React项目，使用 "react-jsx" 或 "react-jsxdev"
+    "jsx": "react-jsx",
     "baseUrl": "src",
     "incremental": false,
     "allowSyntheticDefaultImports": true,
@@ -28,7 +28,7 @@
     "experimentalDecorators": true
   },
   "include": [
-    "src/**/*" // 包含src目录下的所有.ts, .tsx 文件
+    "src/**/*"
   ],
   "exclude": [
     "./node_modules",
